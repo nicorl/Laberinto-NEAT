@@ -1,0 +1,62 @@
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 1500.0
+pop_size              = 50
+reset_on_extinction   = False
+
+[DefaultGenome]
+# network parameters
+feed_forward          = True
+num_inputs            = 8
+num_outputs           = 4
+num_hidden            = 0
+
+# activation functions
+activation_default      = tanh
+activation_mutate_rate  = 0.1
+activation_options      = tanh
+
+# node mutation rates
+node_add_prob         = 0.1
+node_delete_prob      = 0.05
+
+# connection mutation rates
+conn_add_prob         = 0.5
+conn_delete_prob      = 0.1
+
+# weight mutation rates
+weight_max_value      = 3.0
+weight_min_value      = -3.0
+weight_mutate_power   = 0.5
+weight_mutate_rate    = 0.8
+weight_replace_rate   = 0.1
+
+# bias mutation rates
+bias_init_mean        = 0.0    
+bias_init_stdev       = 1.0    
+bias_max_value        = 30.0   
+bias_min_value        = -30.0  
+bias_mutate_power     = 0.5    
+bias_mutate_rate      = 0.7    
+bias_replace_rate     = 0.1    
+
+# response mutation rates
+response_init_mean    = 1.0  # Parámetro nuevo
+response_init_stdev   = 0.0  # Parámetro nuevo
+response_max_value    = 30.0 # Parámetro nuevo
+response_min_value    = -30.0 # Parámetro nuevo
+response_mutate_power = 0.0 # Parámetro nuevo
+response_mutate_rate  = 0.0 # Parámetro nuevo
+response_replace_rate = 0.0 # Parámetro nuevo
+
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient = 0.5
+
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 20
