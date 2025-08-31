@@ -36,7 +36,7 @@ Para poner en marcha el proyecto, se recomienda usar un entorno virtual de Pytho
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
+    git clone [https://github.com/nicorl/Laberinto-NEAT.git](https://github.com/nicorl/Laberinto-NEAT.git)
     cd nombre-del-repo
     ```
 
@@ -57,7 +57,7 @@ Para poner en marcha el proyecto, se recomienda usar un entorno virtual de Pytho
     python main.py
     ```
 
-## 🧠 Explicación Técnica (Para Desarrolladores)
+## 🧠 Explicación Técnica
 
 El núcleo del proyecto reside en la interacción entre los archivos `agente.py` y `neat-python`.
 
